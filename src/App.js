@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ContactList from './ContactList';
+import MessageList from './MessageList';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="app">
+        <div className="app-header">
+          Chatty
+          <img src={logo} className="app-logo" alt="logo" />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="contacts-container">
+          <ContactList />
+        </div>
+        <div className="messages-container">
+          <MessageList />
+        </div>
       </div>
     );
   }

@@ -5,4 +5,4 @@ test:
 	yarn test
 
 build:
-	yarn run build
+	yarn build

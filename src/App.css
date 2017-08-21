@@ -9,8 +9,10 @@
 .app-header {
   background-color: #222;
   height: 40px;
+  line-height: 40px;
   padding: 10px;
   color: white;
+  font-size: 25px;
 }
 .app-header h2 {
   display: inline-block;

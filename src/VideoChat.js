@@ -27,7 +27,9 @@ class VideoChat extends Component {
   stopVideoStream = () => {
     _.each(this.mediaStream.getTracks(), track => {
       track.stop();
+      this.mediaStream.removeTrack(track);
     });
+    this.mediaStream = null;
   };
 
   startVideoCall = () => {

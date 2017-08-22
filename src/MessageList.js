@@ -4,7 +4,7 @@ import VideoChat from './VideoChat';
 class MessageList extends Component {
   render() {
     return (
-      <div>
+      <div className="message-list">
         <ul>
           <li>Message</li>
         </ul>

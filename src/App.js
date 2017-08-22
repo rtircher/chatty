@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ContactList from './ContactList';
 import MessageList from './MessageList';
+import MessageBox from './MessageBox';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         </div>
         <div className="messages-container">
           <MessageList />
+          <MessageBox />
         </div>
       </div>
     );
